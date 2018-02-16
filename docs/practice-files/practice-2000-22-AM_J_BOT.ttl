@@ -16,16 +16,76 @@
 @prefix dc: <http://dublincore.org/documents/2012/06/14/dcmi-terms/> .
 
 # https://howisonlab.github.io/softcite-dataset/pdf-files/2000-22-AM_J_BOT.pdf
-pmcid:2004_40_NAT_GENET rdf:type bioj:article ;
+pmcid:2000-22-AM_J_BOT rdf:type bioj:article ;
 
-    citec:has_in_text_mention FIXME ; # name in text mention like pmcid:PMC3028497_JC01, no quotes
+    citec:has_in_text_mention pmcid:2000-22-AM_J_BOT_SP01 ; # name in text mention like pmcid:PMC3028497_JC01, no quotes
+    citec:has_in_text_mention pmcid:2000-22-AM_J_BOT_SP02 ;
+    citec:has_in_text_mention pmcid:2000-22-AM_J_BOT_SP03 ;
+    citec:has_in_text_mention pmcid:2000-22-AM_J_BOT_SP04 ;
 
       ca:isTargetOf
           [ rdf:type ca:CodeApplication ;
-            ca:hasCoder "userName" ;
+            ca:hasCoder "shruti_2611" ;
             ca:appliesCode [ rdf:type citec:coded_no_in_text_mentions ;
-                             citec:isPresent FIXME; # true/false
+                             citec:isPresent true; # true/false
                            ] ;
           ] ;
+.
+pmcid:2000-22-AM_J_BOT_SP01 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ We used BLS,P as
+‘‘null model,’’ assuming that this table reflects treatment distribution of
+the cages and the frequency of cages with seedlings, but this frequency
+is independent of site, fire, and lichens (Fienberg, 1987).""" ; # use triple quotes
+
+    citec:on_pdf_page 2  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """algorithm""" ; # put one in triple quotes
+                           ca:certainty 5 ; # integer
+                           ca:memo """ googled """ ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """BLS,P """ ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false                           
+                         ] ;
+        ] ;
+    citec:has_reference pmcid-cited:2000-22-AM_J_BOT_Fienberg-1987 ; # name reference like pmcid-cited:a2004-40-NAT_GENET_Author-YYYY, no quotes
 .
 #Use snippets to code the article. itb will paste an in-text mention block. refb will paste a reference block.
