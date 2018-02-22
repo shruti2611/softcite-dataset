@@ -21,7 +21,6 @@ pmcid:2000-22-AM_J_BOT rdf:type bioj:article ;
     citec:has_in_text_mention pmcid:2000-22-AM_J_BOT_SP01 ; # name in text mention like pmcid:PMC3028497_JC01, no quotes
     citec:has_in_text_mention pmcid:2000-22-AM_J_BOT_SP02 ;
     citec:has_in_text_mention pmcid:2000-22-AM_J_BOT_SP03 ;
-    citec:has_in_text_mention pmcid:2000-22-AM_J_BOT_SP04 ;
 
       ca:isTargetOf
           [ rdf:type ca:CodeApplication ;
@@ -83,9 +82,94 @@ is independent of site, fire, and lichens (Fienberg, 1987).""" ; # use triple qu
         [ rdf:type ca:CodeApplication ;
           ca:hasCoder "shruti2611" ;
           ca:appliesCode [ rdf:type citec:creator ;
-                           citec:isPresent false ; # true/false                           
+                           citec:isPresent false ; # true/false
                          ] ;
         ] ;
     citec:has_reference pmcid-cited:2000-22-AM_J_BOT_Fienberg-1987 ; # name reference like pmcid-cited:a2004-40-NAT_GENET_Author-YYYY, no quotes
+.
+pmcid:2000-22-AM_J_BOT_SP02 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """We used Detrended Correspondence
+Analysis in PC-ORD (McCune, 1993) to depict multivariate
+changes in dominance of species neighborhoods for each focal species
+in recently burned and long-unburned sites.""" ; # use triple quotes
+
+    citec:on_pdf_page 4  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software""" ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """Googled it""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """PC-ORD""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """McCune""" ; # use triple quotes
+                         ] ;
+        ] ;
+    citec:has_reference pmcid-cited:2000-22-AM_J_BOT_McCune-1993; # name reference like pmcid-cited:a2004-40-NAT_GENET_Author-YYYY, no quotes
+.
+pmcid:2000-22-AM_J_BOT_SP03 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """There were significant effects of study site and focal
+species on scores of the first axes of the neighbor floristic
+gradients detected by DECORANA ordination (eigenvalue
+0.817, N 5 294; Table 5). """ ; # use triple quotes
+
+    citec:on_pdf_page 7  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """ algorithm """ ; # put one in triple quotes
+                           ca:certainty 8 ; # integer
+                           ca:memo """googled""" ; # use triple quotes
+                         ] ;
+        ] ;
 .
 #Use snippets to code the article. itb will paste an in-text mention block. refb will paste a reference block.
