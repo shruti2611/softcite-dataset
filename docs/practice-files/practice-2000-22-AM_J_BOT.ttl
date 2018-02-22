@@ -26,7 +26,7 @@ pmcid:2000-22-AM_J_BOT rdf:type bioj:article ;
           [ rdf:type ca:CodeApplication ;
             ca:hasCoder "shruti_2611" ;
             ca:appliesCode [ rdf:type citec:coded_no_in_text_mentions ;
-                             citec:isPresent true; # true/false
+                             citec:isPresent false; # true/false
                            ] ;
           ] ;
 .
