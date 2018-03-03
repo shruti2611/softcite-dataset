@@ -1,0 +1,1060 @@
+
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+
+@prefix ca: <http://floss.syr.edu/ontologies/2008/4/contentAnalysis.owl#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix vivo: <http://vivoweb.org/ontology/core#> .
+
+@prefix bioj: <http://james.howison.name/ontologies/bio-journal-sample#> .
+@prefix citec: <http://james.howison.name/ontologies/software-citation-coding#> .
+@prefix bioj-cited: <http://james.howison.name/ontologies/bio-journal-sample-citation#> .
+@prefix pmcid: <https://www.ncbi.nlm.nih.gov/pmc/articles/> .
+@prefix pmcid-cited: <http://james.howison.name/ontologies/pmcid-journal-sample-citation#> .
+@prefix dc: <http://dublincore.org/documents/2012/06/14/dcmi-terms/> .
+
+# https://howisonlab.github.io/softcite-pdf-files/pdf-files/pmc_oa_files/PMC3242594.pdf
+pmcid:PMC3242594 rdf:type bioj:article ;
+
+      ca:isTargetOf
+          [ rdf:type ca:CodeApplication ;
+            ca:hasCoder "shruti2611" ;
+            ca:appliesCode [ rdf:type citec:coded_no_in_text_mentions ;
+                             citec:isPresent false; # true/false
+                           ] ;
+          ] ;
+
+
+    citec:has_in_text_mention pmcid:PMC3242594_SP01 ; # name in text mention like pmcid:PMC3028497_JC01, no quotes
+    citec:has_in_text_mention pmcid:PMC3242594_SP02 ;
+    citec:has_in_text_mention pmcid:PMC3242594_SP03 ;
+    citec:has_in_text_mention pmcid:PMC3242594_SP04 ;
+    citec:has_in_text_mention pmcid:PMC3242594_SP05 ;
+    citec:has_in_text_mention pmcid:PMC3242594_SP06 ;
+    citec:has_in_text_mention pmcid:PMC3242594_SP07 ;
+    citec:has_in_text_mention pmcid:PMC3242594_SP08 ;
+    citec:has_in_text_mention pmcid:PMC3242594_SP09 ;
+    citec:has_in_text_mention pmcid:PMC3242594_SP10 ;
+    citec:has_in_text_mention pmcid:PMC3242594_SP11 ;
+    citec:has_in_text_mention pmcid:PMC3242594_SP12 ;
+    citec:has_in_text_mention pmcid:PMC3242594_SP13 ;
+    citec:has_in_text_mention pmcid:PMC3242594_SP14 ;
+    citec:has_in_text_mention pmcid:PMC3242594_SP15 ;
+.
+pmcid:PMC3242594_SP01 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """The cancer incidence rates were modelled using age-period
+cohort
+(APC) models and extrapolated out to 2030. """ ; # use triple quotes
+
+    citec:on_pdf_page 2  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """ software """ ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """ Googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """age-period cohort (APC) models """  ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+pmcid:PMC3242594_SP02 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """model was
+lðage; periodÞ ¼ gffAðageÞ þ fPðperiodÞ þ fCðcohortÞg;""" ; # use triple quotes
+
+    citec:on_pdf_page 2  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """ software """ ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """ Googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent false; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ APC model""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+pmcid:PMC3242594_SP03 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ Flexible additive models were popularised by
+Hastie and Tibshirani (1990) and cubic splines have been used
+earlier in APC models by Sasieni and Adams (1999, 2000) and
+more recently by Cartensen (2007).""" ; # use triple quotes
+
+    citec:on_pdf_page 2  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """ software """ ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """Googled """ ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ APC Models"""  ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+pmcid:PMC3242594_SP04 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """For prostate, data
+from the period prior to extensive use of PSA testing (1975
+to 1991) were used to fit an APC model (with a logarithm link)
+to predict rates in the absence of extensive PSA testing for
+2004–2007. """ ; # use triple quotes
+
+    citec:on_pdf_page 2  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software """ ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """ Googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """APC models """ ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+pmcid:PMC3242594_SP05 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ Predictions for 2008–2030 were
+made by fitting APC models to the data for 1975–1991 and the
+modified data for 2004–2007 and multiplying the model projec
+tions
+by
+the
+previously
+obtained
+observed/predicted
+ratios.""" ; # use triple quotes
+
+    citec:on_pdf_page 2  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software """ ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """ Googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """APC models """ ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+pmcid:PMC3242594_SP06 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ A function was developed in Stata to fit the model to the
+incidence of cancer in individual years (for the 33-year period
+from 1975 to 2007), and 5-year age groups (0–4, 5–9,
+y,
+80–84,
+85þ) by sex."""  ; # use triple quotes
+
+    citec:on_pdf_page 2  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """ software """  ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """ googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ Stata""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+pmcid:PMC3242594_SP07 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ This function was used in Stata version 10"""  ; # use triple quotes
+
+    citec:on_pdf_page 2  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """ software """  ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """ googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ Stata""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ Stata version 10""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+pmcid:PMC3242594_SP08 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Comparisons, for all sites other than breast and prostate, of our
+cubic spline projections were made with those using step functions
+in
+the
+Nordpred
+software
+(Møller
+et
+al,
+2002)
+with
+the
+R-statistical package. """  ; # use triple quotes
+
+    citec:on_pdf_page 2  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """ software """  ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """ googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ Nordpred software""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    citec:has_reference pmcid-cited:PMC3242594_Moller-2002 ; # name reference like pmcid-cited:a2004-40-NAT_GENET_Author-YYYY, no quotes
+.
+pmcid:PMC3242594_SP09 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ It is noted that the fit of the APC model
+to the observed rates for cancer of the corpus uteri is poor.""" ; # use triple quotes
+
+    citec:on_pdf_page 6  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software """ ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """ Googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ APC model"""  ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+pmcid:PMC3242594_SP10 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ We also used the Nordpred package (with a power-5 link and
+5-year step functions for age, period and cohort) to project
+rates until 2023–2027.""" ; # use triple quotes
+
+    citec:on_pdf_page 7  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """ software """ ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """ Googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ Nordpred package """ ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+pmcid:PMC3242594_SP11 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """These results can be compared with those obtained by using the
+data until 2002 in Nordpred to predict results for 2003–2008 and
+comparing these with the observed data. """ ; # use triple quotes
+
+    citec:on_pdf_page 7  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """software"""  ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """Googled """  ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """Nordpred """ ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+pmcid:PMC3242594_SP12 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ We compared our results with those based on projections using
+the Nordpred package and its default power-5 link.""" ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """ software """ ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """ Googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ Nordpred package """ ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+pmcid:PMC3242594_SP13 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ The Nordpred
+package requires input of past data for 5-year time periods, and
+produces projections for periods of the same duration.""" ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """ software """ ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """ Googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent false; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ Nordpred package """ ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+pmcid:PMC3242594_SP14 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ The ‘drift’
+component in Nordpred is reduced by 25% for each 5-year period
+after the first.""" ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """ software """ ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """ Googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent false; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ Nordpred""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+pmcid:PMC3242594_SP15 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ The results are a little different from those based
+on our modelling using single years of observation, and the
+magnitude of the deviation is similar to that seen when current
+observed incidence rates are compared with those projected from
+past data using Nordpred.""" ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """ software """ ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """ Googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ Nordpred""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
+
+pmcid:PMC3242594_SP15 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """ Møller et al (2007) published projections of cancer incidence for
+England, for the period 2004–2020, based on observed rates in
+1974–2003, using the Nordpred package. """ ; # use triple quotes
+
+    citec:on_pdf_page 8  ; # integer
+
+    citec:spans_pages false ; # true/false
+
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+        ca:appliesCode [ rdf:type citec:mention_type ;
+                           rdfs:label """ software """ ; # put one in triple quotes
+                           ca:certainty 10 ; # integer
+                           ca:memo """ Googled""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_was_used ;
+                           citec:isPresent true; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:software_name ;
+                           citec:isPresent true ; # true/false
+                           rdfs:label """ Nordpred""" ; # use triple quotes
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_number ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:version_date ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:url ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+    ca:isTargetOf
+        [ rdf:type ca:CodeApplication ;
+          ca:hasCoder "shruti2611" ;
+          ca:appliesCode [ rdf:type citec:creator ;
+                           citec:isPresent false ; # true/false
+                         ] ;
+        ] ;
+.
