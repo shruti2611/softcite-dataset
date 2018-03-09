@@ -29,7 +29,7 @@ pmcid:PMC4521676 rdf:type bioj:article ;
 
     citec:has_in_text_mention pmcid:PMC4521676_SP01 ; # name in text mention like pmcid:PMC3028497_JC01, no quotes
 .
-pmcid:PMC4521676_SP01: rdf:type citec:in_text_mention ; # use in text mention name
+pmcid:PMC4521676_SP01 rdf:type citec:in_text_mention ; # use in text mention name
     citec:full_quote """Data analysis was both descriptive and inferential at the
 95% confidence level using SPSS version 16.0 (SPSS Inc.,
 Chicago, IL, USA).""" ; # use triple quotes
