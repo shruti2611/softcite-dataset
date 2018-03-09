@@ -15,8 +15,8 @@
 @prefix pmcid-cited: <http://james.howison.name/ontologies/pmcid-journal-sample-citation#> .
 @prefix dc: <http://dublincore.org/documents/2012/06/14/dcmi-terms/> .
 
-# https://howisonlab.github.io/softcite-pdf-files/pdf-files/pmc_oa_files/PMC4521676.pdf
-pmcid:PMC4521676 rdf:type bioj:article ;
+# https://howisonlab.github.io/softcite-pdf-files/pdf-files/pmc_oa_files/PMC4152993.pdf
+pmcid:PMC4152993 rdf:type bioj:article ;
 
     ca:isTargetOf
         [ rdf:type ca:CodeApplication ;
@@ -27,14 +27,14 @@ pmcid:PMC4521676 rdf:type bioj:article ;
         ] ;
 
 
-    citec:has_in_text_mention pmcid:PMC4521676_SP01 ; # name in text mention like pmcid:PMC3028497_JC01, no quotes
+    citec:has_in_text_mention pmcid:PMC4152993_SP01 ; # name in text mention like pmcid:PMC3028497_JC01, no quotes
 .
-pmcid:PMC4521676_SP01: rdf:type citec:in_text_mention ; # use in text mention name
-    citec:full_quote """Data analysis was both descriptive and inferential at the
-95% confidence level using SPSS version 16.0 (SPSS Inc.,
-Chicago, IL, USA).""" ; # use triple quotes
+pmcid:PMC4152993_SP01 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """Analysis of date was carried out with the “Statistical
+Package for the Social Sciences“(SPSS) for Windows in
+the version 20 """ ; # use triple quotes
 
-    citec:on_pdf_page 3  ; # integer
+    citec:on_pdf_page 15  ; # integer
 
     citec:spans_pages false ; # true/false
 
@@ -42,9 +42,9 @@ Chicago, IL, USA).""" ; # use triple quotes
         [ rdf:type ca:CodeApplication ;
           ca:hasCoder "shruti2611" ;
         ca:appliesCode [ rdf:type citec:mention_type ;
-                           rdfs:label """software """ ; # put one in triple quotes
+                           rdfs:label """ software """ ; # put one in triple quotes
                            ca:certainty 10 ; # integer
-                           ca:memo """ spss is a software""" ; # use triple quotes
+                           ca:memo """spss is a common stats sofware""" ; # use triple quotes
                          ] ;
         ] ;
     ca:isTargetOf
@@ -59,7 +59,8 @@ Chicago, IL, USA).""" ; # use triple quotes
           ca:hasCoder "shruti2611" ;
           ca:appliesCode [ rdf:type citec:software_name ;
                            citec:isPresent true ; # true/false
-                           rdfs:label """SPSS """ ; # use triple quotes
+                           rdfs:label """ Statistical
+Package for the Social Sciences“(SPSS)"""  ; # use triple quotes
                          ] ;
         ] ;
     ca:isTargetOf
@@ -67,7 +68,7 @@ Chicago, IL, USA).""" ; # use triple quotes
           ca:hasCoder "shruti2611" ;
           ca:appliesCode [ rdf:type citec:version_number ;
                            citec:isPresent true ; # true/false
-                           rdfs:label """ version 16.0 """ ; # use triple quotes
+                           rdfs:label """version 20 """  ; # use triple quotes
                          ] ;
         ] ;
     ca:isTargetOf
@@ -88,8 +89,7 @@ Chicago, IL, USA).""" ; # use triple quotes
         [ rdf:type ca:CodeApplication ;
           ca:hasCoder "shruti2611" ;
           ca:appliesCode [ rdf:type citec:creator ;
-                           citec:isPresent true ; # true/false
-                           rdfs:label """ SPSS Inc., Chicago, IL, USA""" ; # use triple quotes
+                           citec:isPresent false ; # true/false
                          ] ;
         ] ;
 .
