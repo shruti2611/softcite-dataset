@@ -15,141 +15,141 @@
 @prefix pmcid-cited: <http://james.howison.name/ontologies/pmcid-journal-sample-citation#> .
 @prefix dc: <http://dublincore.org/documents/2012/06/14/dcmi-terms/> .
 
-# https://howisonlab.github.io/softcite-dataset/pdf-files/pmc_oa_files/PMC5039120.pdf
-pmcid:PMC5039120 rdf:type bioj:article ;
-
-    citec:has_in_text_mention pmcid:PMC5039120_SK01 ; # name in text mention like pmcid:PMC3028497_JC01, no quotes
-    citec:has_in_text_mention pmcid:PMC5039120_SK02 ;
+# https://howisonlab.github.io/softcite-pdf-files/pdf-files/pmc_oa_files/PMC5436526.pdf
+pmcid:PMC5436526 rdf:type bioj:article ;
 
     ca:isTargetOf
         [ rdf:type ca:CodeApplication ;
-          ca:hasCoder "shruthikrish" ;
+          ca:hasCoder "ambermomin" ;
           ca:appliesCode [ rdf:type citec:coded_no_in_text_mentions ;
                            citec:isPresent false; # true/false
                          ] ;
         ] ;
-.
-pmcid:PMC5039120_SK01 rdf:type citec:in_text_mention ; # use in text mention name
-    citec:full_quote """Daily calorie intake was monitored via 24-hour food re-call and analyzed using CAN-Pro ver. 3.0 software (Korean Nutrition Society, Seoul, Korea).""" ; # use triple quotes
 
-    citec:on_pdf_page 3  ; # integer
+
+    citec:has_in_text_mention pmcid:PMC5436526_AM01 ; # name in text mention like pmcid:PMC3028497_JC01, no quotes
+    citec:has_in_text_mention pmcid:PMC5436526_AM02 ;
+.
+pmcid:PMC5436526_AM01 rdf:type citec:in_text_mention ; # use in text mention name
+    citec:full_quote """We then modeled the detection of the LNM by PET as a function of the diameter using a logistic regression model in STATA® version 14.1, which allows estimating thresholds corresponding to 50% and 90% detection rates.""" ; # use triple quotes
+
+    citec:on_pdf_page 4  ; # integer
 
     citec:spans_pages false ; # true/false
 
     ca:isTargetOf
         [ rdf:type ca:CodeApplication ;
-          ca:hasCoder "shruthikrish" ;
+          ca:hasCoder "ambermomin" ;
           ca:appliesCode [ rdf:type citec:mention_type ;
-                           rdfs:label """software""" ; # put one in triple quotes
+                           rdfs:label  """software"""  ; # put one in triple quotes
                            ca:certainty 10 ; # integer
-                           ca:memo """says software in quote""" ; # use triple quotes
+                           ca:memo """Google""" ; # use triple quotes
                          ] ;
         ] ;
     ca:isTargetOf
         [ rdf:type ca:CodeApplication ;
-          ca:hasCoder "shruthikrish" ;
+          ca:hasCoder "ambermomin" ;
           ca:appliesCode [ rdf:type citec:software_was_used ;
                            citec:isPresent true; # true/false
                          ] ;
         ] ;
     ca:isTargetOf
         [ rdf:type ca:CodeApplication ;
-          ca:hasCoder "shruthikrish" ;
+          ca:hasCoder "ambermomin" ;
           ca:appliesCode [ rdf:type citec:software_name ;
                            citec:isPresent true ; # true/false
-                           rdfs:label """CAN-Pro""" ; # use triple quotes
+                           rdfs:label """STATA""" ; # use triple quotes
                          ] ;
         ] ;
     ca:isTargetOf
         [ rdf:type ca:CodeApplication ;
-          ca:hasCoder "shruthikrish" ;
+          ca:hasCoder "ambermomin" ;
           ca:appliesCode [ rdf:type citec:version_number ;
                            citec:isPresent true ; # true/false
-                           rdfs:label """3.0""" ; # use triple quotes
+                           rdfs:label """version 14.1""" ; # use triple quotes
                          ] ;
         ] ;
     ca:isTargetOf
         [ rdf:type ca:CodeApplication ;
-          ca:hasCoder "shruthikrish" ;
+          ca:hasCoder "ambermomin" ;
           ca:appliesCode [ rdf:type citec:version_date ;
                            citec:isPresent false ; # true/false
                          ] ;
         ] ;
     ca:isTargetOf
         [ rdf:type ca:CodeApplication ;
-          ca:hasCoder "shruthikrish" ;
+          ca:hasCoder "ambermomin" ;
           ca:appliesCode [ rdf:type citec:url ;
                            citec:isPresent false ; # true/false
                          ] ;
         ] ;
     ca:isTargetOf
         [ rdf:type ca:CodeApplication ;
-          ca:hasCoder "shruthikrish" ;
+          ca:hasCoder "ambermomin" ;
           ca:appliesCode [ rdf:type citec:creator ;
-                           citec:isPresent true ; # true/false
-                           rdfs:label """Korean Nutrition Society, Seoul, Korea""" ; # use triple quotes
+                           citec:isPresent false ; # true/false
                          ] ;
         ] ;
 .
-pmcid:PMC5039120_SK02 rdf:type citec:in_text_mention ; # use in text mention name
-    citec:full_quote """SAS statistical software ver. 9.4 (SAS In-stitute Inc., Cary, NC, USA) was used to conduct statistical analyses. """ ; # use triple quotes
+pmcid:PMC5436526_AM02 rdf:type citec:in_text_mention ; # use in text mention name
+citec:full_quote """The remaining statistics were obtained with SPSS v19 (IBM Corp. Armonk, NY, USA).""" ; # use triple quotes
 
-    citec:on_pdf_page 3  ; # integer
+    citec:on_pdf_page 4  ; # integer
 
     citec:spans_pages false ; # true/false
 
     ca:isTargetOf
         [ rdf:type ca:CodeApplication ;
-          ca:hasCoder "shruthikrish" ;
+          ca:hasCoder "ambermomin" ;
           ca:appliesCode [ rdf:type citec:mention_type ;
-                           rdfs:label """software""" ; # put one in triple quotes
+                           rdfs:label  """software"""  ; # put one in triple quotes
                            ca:certainty 10 ; # integer
-                           ca:memo """says software in quote""" ; # use triple quotes
+                           ca:memo """Google""" ; # use triple quotes
                          ] ;
         ] ;
     ca:isTargetOf
         [ rdf:type ca:CodeApplication ;
-          ca:hasCoder "shruthikrish" ;
+          ca:hasCoder "ambermomin" ;
           ca:appliesCode [ rdf:type citec:software_was_used ;
                            citec:isPresent true; # true/false
                          ] ;
         ] ;
     ca:isTargetOf
         [ rdf:type ca:CodeApplication ;
-          ca:hasCoder "shruthikrish" ;
+          ca:hasCoder "ambermomin" ;
           ca:appliesCode [ rdf:type citec:software_name ;
                            citec:isPresent true ; # true/false
-                           rdfs:label """SAS statistical software""" ; # use triple quotes
+                           rdfs:label """SPSS""" ; # use triple quotes
                          ] ;
         ] ;
     ca:isTargetOf
         [ rdf:type ca:CodeApplication ;
-          ca:hasCoder "shruthikrish" ;
+          ca:hasCoder "ambermomin" ;
           ca:appliesCode [ rdf:type citec:version_number ;
                            citec:isPresent true ; # true/false
-                           rdfs:label """9.4""" ; # use triple quotes
+                           rdfs:label """v19""" ; # use triple quotes
                          ] ;
         ] ;
     ca:isTargetOf
         [ rdf:type ca:CodeApplication ;
-          ca:hasCoder "shruthikrish" ;
+          ca:hasCoder "ambermomin" ;
           ca:appliesCode [ rdf:type citec:version_date ;
                            citec:isPresent false ; # true/false
                          ] ;
         ] ;
     ca:isTargetOf
         [ rdf:type ca:CodeApplication ;
-          ca:hasCoder "shruthikrish" ;
+          ca:hasCoder "ambermomin" ;
           ca:appliesCode [ rdf:type citec:url ;
                            citec:isPresent false ; # true/false
                          ] ;
         ] ;
     ca:isTargetOf
         [ rdf:type ca:CodeApplication ;
-          ca:hasCoder "shruthikrish" ;
+          ca:hasCoder "ambermomin" ;
           ca:appliesCode [ rdf:type citec:creator ;
                            citec:isPresent true ; # true/false
-                           rdfs:label """SAS In-stitute Inc., Cary, NC, USA)""" ; # use triple quotes
+                           rdfs:label """IBM Corp""" ; # use triple quotes
                          ] ;
         ] ;
 .
