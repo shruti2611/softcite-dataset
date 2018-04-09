@@ -48,7 +48,6 @@ doi:10.1086%2Fma.19.3585326 rdf:type bioj:article ;
         ] ;
 
 
-    citec:has_in_text_mention FIXME ;
     # create name for in_text_mention like
     # doi:10.1086%2Fma.19.3585326_JH01
 
